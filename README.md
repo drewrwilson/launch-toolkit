@@ -9,16 +9,16 @@ I start a bunch of projects. Open source software projects, community groups, ac
 
 ## Tools we'll be using
 
- * _github_ - this code in this github project is a simple webpage. And we'll be using Github Pages, a way that github offers free webhosting.
- * _MailChimp_ - email list management software. free for lists under 2000 signups.
- * _NameCheap_ - a company that allows us to register a domain name. About $10/year for a domain.
- * _Cloudflare_ - A company that allows us to easily enable HTTPS for the webpage for free. Free
+ * **github** - this code in this github project is a simple webpage. And we'll be using Github Pages, a way that github offers free webhosting.
+ * **MailChimp** - email list management software. free for lists under 2000 signups.
+ * **NameCheap** - a company that allows us to register a domain name. About $10/year for a domain.
+ * **Cloudflare** - A company that allows us to easily enable HTTPS for the webpage for free. Free
 
-*And now onto the step-by-step guide!*
+_And now onto the step-by-step guide!_
 
 ### Github
 
-_Goal:_ Setup a simple customized website with free hosting.
+**Goal:** Setup a simple customized website with free hosting.
 
  1. Click the fork button at the top of this github project, this will make a copy of this project on your github account.
  1. Now you should be working on the fork of the project. Rename the github project to the name of the new project that you're launching.
@@ -41,11 +41,13 @@ _Goal:_ Setup a simple customized website with free hosting.
 
 ### MailChimp
 
-_Goal:_ Get form submission URL for email list sign up and spam checker code. Add them to the `config.yml` file in this github project.
+**Goal:** Get form submission URL for email list sign up and spam checker code. Add them to the `config.yml` file in this github project.
 
   1. Create a new MailChimp account.
   1. Login and go to your email list. Find the option for Signup Forms setup a new account and get the code for a signup link:
+
   [](toolkit-images/mailchimp-signup-forms.png)
+
   1. Choose embeddable forms.
   1. Then choose "Super slim form"
   1. Scroll down to find the HTML code.
@@ -54,16 +56,18 @@ _Goal:_ Get form submission URL for email list sign up and spam checker code. Ad
 
 ### NameCheap
 
-_Goal:_ Buy a domain and point the nameservers to Cloudflare.
+**Goal:** Buy a domain and point the nameservers to Cloudflare.
 
 1. Go to NameCheap.com and buy a domain for the project.
 1. After paying, go to your Domains dashboard and change the Nameserver settings to custom:
+
 [](toolkit-images/namecheap-custom-nameserver.png)
+
 1. Set the first one to: `cortney.ns.cloudflare.com` and the second one to: `gabe.ns.cloudflare.com`
 
 ### Cloudflare
 
-_Goal:_ Point your new domain to github pages for webhosting and enable HTTPS.
+**Goal:** Point your new domain to github pages for webhosting and enable HTTPS.
 
  1. Create an account with Cloudflare and Login.
  1. Add your new domain. It will likely ask to scan your domain for existing DNS entries. Choose a free account.
@@ -73,6 +77,7 @@ _Goal:_ Point your new domain to github pages for webhosting and enable HTTPS.
   1. Add an A Name entry. Set the Name to `@` and set the Value to `192.30.252.153`.
   1. Add a second A Name entry. Set the Name to `@` and set the Value to `192.30.252.153`.
   1. Add a CNAME entry. Set the Name to `www` and set the value to `YOURDOMAIN.com`. Your DNS setting should look like this:
+
 [](toolkit-images/cloudflare-dns-settings.png)
 
  1. Now let's enable HTTPS.
@@ -84,7 +89,7 @@ _Goal:_ Point your new domain to github pages for webhosting and enable HTTPS.
 
 
 ## Social media
-_Goal:_ Add social media links to your webpage.
+*Goal:* Add social media links to your webpage.
 
 If you have social media accounts for your project, you can enable social media links on your site by adding the usernames to the appropriate variables in `config.yml`. eg if you have a twitter account, you can add your username to `config.yml` by adding editing the twitter line to say `twitter: drewSaysGoVeg` or for instagram: `instagram: YourInstgramName`. For facebook, some new pages don't yet have a short name. For facebook social media links to work, you need put everything that comes after facebook.com, eg `facebook: theleagueofjust.us` or `facebook: \213213112423\YourFacebookPageName`.
 
