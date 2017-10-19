@@ -15,10 +15,12 @@ html {
 body {
   align-items: center;
   text-align: center;
-  background-image: url({{ '/images/background.jpg' | prepend: site.baseurl }});
+  {% if site.backgroundImage %}
+  background-image: url({{ site.backgroundImage | prepend: site.baseurl }});
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  {% endif %}
   display: flex;
   font-family: monospace;
   height: 100%;

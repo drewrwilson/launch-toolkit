@@ -1,11 +1,13 @@
 title: Launch A New Project
-tagline: Toolkit launching your new project. 10 min set up!
+tagline: Toolkit for launching your new project. Live in 15min!
 description: Make a launch site for your new webpage. Add an email list, HTTPS, free webhosting
-url: http://drewrwilson.github.io/launch-a-new-project
+url: http://drewrwilson.github.io/launch-a-new-project/
+
+logo: /images/logo.png
+backgroundImage: /images/background.jpg
 
 mailchimpURI:
 mailchimpAntiSpamCode:
-logo: /images/logo.png
 
 showPrivacyPolicy: false
 
