@@ -61,6 +61,28 @@ _Goal:_ Buy a domain and point the nameservers to Cloudflare.
 [](toolkit-images/namecheap-custom-nameserver.png)
 1. Set the first one to: `cortney.ns.cloudflare.com` and the second one to: `gabe.ns.cloudflare.com`
 
+### Cloudflare
+
+_Goal:_ Point your new domain to github pages for webhosting and enable HTTPS.
+
+ 1. Create an account with Cloudflare and Login.
+ 1. Add your new domain. It will likely ask to scan your domain for existing DNS entries. Choose a free account.
+ 1. After you add your new domain, go select it from the dropdown at the top of the page and go to the DNS settings.
+ 1. Delete all of the existing DNS entries.
+ 1. Now we're going to setup the domain to point to Github Pages for free webhosting.
+  1. Add an A Name entry. Set the Name to `@` and set the Value to `192.30.252.153`.
+  1. Add a second A Name entry. Set the Name to `@` and set the Value to `192.30.252.153`.
+  1. Add a CNAME entry. Set the Name to `www` and set the value to `YOURDOMAIN.com`. Your DNS setting should look like this:
+[](toolkit-images/cloudflare-dns-settings.png)
+
+ 1. Now let's enable HTTPS.
+  1. Go to the Page Rules tab.
+  1. Click 'Create Page Rule' and `http://yourdomain.com/` to the text field and choose 'Always Use HTTPS' from the dropdown settings menu. Click 'Save and Deploy'.
+  1. Add another page rule for `http://yourdomain.com/*` and again choose 'Always Use HTTPS'. Save and deploy.
+  1. Test HTTPS by loading http://yourdomain.com in your browser. It should automatically redirect you to the https version of the site and a small lock icon should appear in your browser. This means that data is now being encrypted from the browser to your server.
+
+
+
 ## Social media
 _Goal:_ Add social media links to your webpage.
 
