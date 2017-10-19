@@ -46,7 +46,7 @@ _And now onto the step-by-step guide!_
   1. Create a new MailChimp account.
   1. Login and go to your email list. Find the option for Signup Forms setup a new account and get the code for a signup link:
 
-  [](toolkit-images/mailchimp-signup-forms.png)
+  ![](toolkit-images/mailchimp-signup-forms.png)
 
   1. Choose embeddable forms.
   1. Then choose "Super slim form"
@@ -61,7 +61,7 @@ _And now onto the step-by-step guide!_
 1. Go to NameCheap.com and buy a domain for the project.
 1. After paying, go to your Domains dashboard and change the Nameserver settings to custom:
 
-[](toolkit-images/namecheap-custom-nameserver.png)
+![](toolkit-images/namecheap-custom-nameserver.png)
 
 1. Set the first one to: `cortney.ns.cloudflare.com` and the second one to: `gabe.ns.cloudflare.com`
 
@@ -78,7 +78,7 @@ _And now onto the step-by-step guide!_
   1. Add a second A Name entry. Set the Name to `@` and set the Value to `192.30.252.153`.
   1. Add a CNAME entry. Set the Name to `www` and set the value to `YOURDOMAIN.com`. Your DNS setting should look like this:
 
-[](toolkit-images/cloudflare-dns-settings.png)
+![](toolkit-images/cloudflare-dns-settings.png)
 
  1. Now let's enable HTTPS.
   1. Go to the Page Rules tab.
