@@ -83,7 +83,7 @@ _And now onto the step-by-step guide!_
 
 
 ## Social media
-*Goal:* Add social media links to your webpage.
+**Goal:** Add social media links to your webpage.
 
 If you have social media accounts for your project, you can enable social media links on your site by adding the usernames to the appropriate variables in `config.yml`. eg if you have a twitter account, you can add your username to `config.yml` by adding editing the twitter line to say `twitter: drewSaysGoVeg` or for instagram: `instagram: YourInstgramName`. For facebook, some new pages don't yet have a short name. For facebook social media links to work, you need put everything that comes after facebook.com, eg `facebook: theleagueofjust.us` or `facebook: \213213112423\YourFacebookPageName`.
 

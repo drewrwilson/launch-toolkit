@@ -16,7 +16,7 @@ body {
   align-items: center;
   text-align: center;
   {% if site.backgroundImage %}
-  background-image: url({{ site.backgroundImage | prepend: site.baseurl }});
+  background-image: url({{ site.backgroundImage | prepend: site.url }});
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

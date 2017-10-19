@@ -5,9 +5,9 @@
 <meta name='twitter:title' content='{{ site.title }}  - {{ site.tagline }}' />
 <meta name='twitter:description' content='{{ site.description }}' />
 {% if site.socialMediaImage %}
-<meta name='twitter:image' content='{{ site.socialMediaImage | prepend: site.baseurl }}' />
+<meta name='twitter:image' content='{{ site.socialMediaImage | prepend: site.url }}' />
 {% else %}
-<meta name='twitter:image' content='{{ site.logo | prepend: site.baseurl }}' />
+<meta name='twitter:image' content='{{ site.logo | prepend: site.url }}' />
 {% endif %}
 
 <meta property='og:url' content='{{ site.url }}' />
@@ -16,7 +16,7 @@
 <meta property='og:description' content='{{ site.description }}' />
 
 {% if site.socialMediaImage %}
-<meta property='og:image' content='{{ site.socialMediaImage | prepend: site.baseurl }}' />
+<meta property='og:image' content='{{ site.socialMediaImage | prepend: site.url }}' />
 {% else %}
-<meta name='twitter:image' content='{{ site.logo | prepend: site.baseurl }}' />
+<meta name='twitter:image' content='{{ site.logo | prepend: site.url }}' />
 {% endif %}
