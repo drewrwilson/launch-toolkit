@@ -24,20 +24,20 @@ _And now onto the step-by-step guide!_
  1. Now you should be working on the fork of the project. Rename the github project to the name of the new project that you're launching.
  1. An FYI for experienced developers. Usually your git repository has a `master` branch. In this project, I've added the `gh-pages` branch and deleted the `master` branch. Having a `gh-pages` branch tells github that you want the code in this project to be served via Github Pages, their free webhosting program. And since this only has a webpage, we no longer need the `master` branch. I've found that keeping `master` around only leads to confusion, so I deleted it entirely.
  1. Customize the webpage.
-  1. Edit `config.yml` to add the details about the project that you're launching.
-    * `title` is the title of your project
-    * `tagline` is a very short description of your project. This will go right on the homepage.
-    * `description` is a few sentences describing your project. This is used in the social media sharing text.
-    * `url` is the explicit URL of your project. Right now you can make it `http://YourGithubUsername.github.io/github-project-name` and this webpage will load fine. If you are buying a domain for your project (covered later), you can go ahead and put your URL here. Or you could always come back after you buy a domain and change this.
+   1. Edit `config.yml` to add the details about the project that you're launching.
+     * `title` is the title of your project
+     * `tagline` is a very short description of your project. This will go right on the homepage.
+     * `description` is a few sentences describing your project. This is used in the social media sharing text.
+     * `url` is the explicit URL of your project. Right now you can make it `http://YourGithubUsername.github.io/github-project-name` and this webpage will load fine. If you are buying a domain for your project (covered later), you can go ahead and put your URL here. Or you could always come back after you buy a domain and change this.
  1. Add a logo
-  1. Upload a logo and overwrite `logo.png` in the `images` directory in this project. The best is a PNG file with a transparent background. You can upload a file by clicking on the `images` folder in this github project and then dragging your logo to that folder.
-  1. If you overwrite the existing `logo.png` file then you don't need to do anything further. If your logo has a different filename, you then need to edit `config.yml` and change the line that says `logo: /images/logo.png` to `logo: /images/YOURFILENAME`.
-  1. Optional: You can add a background image for the site. Upload an image to the `images` directory in this github project, just like you did for the logo. Now edit `config.yml` and add the path to your background image, eg `/images/background.jpg`.
-  1. Optional: You can also now add a social media sharing image. This is different from your logo because it's the image that facebook and twitter will use as the preview image when someone is sharing a link to your webpage on their social network. If you have a custom one, you can leave it set to the same as your logo (`/images/logo.png`).
+   1. Upload a logo and overwrite `logo.png` in the `images` directory in this project. The best is a PNG file with a transparent background. You can upload a file by clicking on the `images` folder in this github project and then dragging your logo to that folder.
+   1. If you overwrite the existing `logo.png` file then you don't need to do anything further. If your logo has a different filename, you then need to edit `config.yml` and change the line that says `logo: /images/logo.png` to `logo: /images/YOURFILENAME`.
+   1. Optional: You can add a background image for the site. Upload an image to the `images` directory in this github project, just like you did for the logo. Now edit `config.yml` and add the path to your background image, eg `/images/background.jpg`.
+   1. Optional: You can also now add a social media sharing image. This is different from your logo because it's the image that facebook and twitter will use as the preview image when someone is sharing a link to your webpage on their social network. If you have a custom one, you can leave it set to the same as your logo (`/images/logo.png`).
  1. Add your domain to the `CNAME` file. Open up `CNAME` and replace `example.com` with your domain name (don't include http, https or www in the domain name eg just put `yourdomain.com`). If you haven't already, go back to `config.yml` and update your `url` in the config file with your domain name.
  1. (Optional) Add a privacy policy
-  1. Edit `privacy.md` to add your privacy policy for anyone who signs up for your email list.
-  1. To display the privacy policy, edit `config.yml` and change the line that says `showPrivacyPolicy: false` to `showPrivacyPolicy: true`.
+   1. Edit `privacy.md` to add your privacy policy for anyone who signs up for your email list.
+   1. To display the privacy policy, edit `config.yml` and change the line that says `showPrivacyPolicy: false` to `showPrivacyPolicy: true`.
 
 ### MailChimp
 
@@ -70,15 +70,15 @@ _And now onto the step-by-step guide!_
  1. After you add your new domain, go select it from the dropdown at the top of the page and go to the DNS settings.
  1. Delete all of the existing DNS entries.
  1. Now we're going to setup the domain to point to Github Pages for free webhosting.
-  1. Add an A Name entry. Set the Name to `@` and set the Value to `192.30.252.153`.
-  1. Add a second A Name entry. Set the Name to `@` and set the Value to `192.30.252.153`.
-  1. Add a CNAME entry. Set the Name to `www` and set the value to `YOURDOMAIN.com`. Your DNS setting should look like this:
+   1. Add an A Name entry. Set the Name to `@` and set the Value to `192.30.252.153`.
+   1. Add a second A Name entry. Set the Name to `@` and set the Value to `192.30.252.153`.
+   1. Add a CNAME entry. Set the Name to `www` and set the value to `YOURDOMAIN.com`. Your DNS setting should look like this:
 ![](toolkit-images/cloudflare-dns-settings.png)
  1. Now let's enable HTTPS.
-  1. Go to the Page Rules tab.
-  1. Click 'Create Page Rule' and `http://yourdomain.com/` to the text field and choose 'Always Use HTTPS' from the dropdown settings menu. Click 'Save and Deploy'.
-  1. Add another page rule for `http://yourdomain.com/*` and again choose 'Always Use HTTPS'. Save and deploy.
-  1. Test HTTPS by loading http://yourdomain.com in your browser. It should automatically redirect you to the https version of the site and a small lock icon should appear in your browser. This means that data is now being encrypted from the browser to your server.
+   1. Go to the Page Rules tab.
+   1. Click 'Create Page Rule' and `http://yourdomain.com/` to the text field and choose 'Always Use HTTPS' from the dropdown settings menu. Click 'Save and Deploy'.
+   1. Add another page rule for `http://yourdomain.com/*` and again choose 'Always Use HTTPS'. Save and deploy.
+   1. Test HTTPS by loading http://yourdomain.com in your browser. It should automatically redirect you to the https version of the site and a small lock icon should appear in your browser. This means that data is now being encrypted from the browser to your server.
 
 
 ## Social media
