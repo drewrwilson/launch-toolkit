@@ -17,9 +17,9 @@ body {
   text-align: center;
   {% if site.backgroundImage %}
   background-image: url({{ site.backgroundImage | prepend: site.url }});
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  //background-size: cover;
+  //background-repeat: no-repeat;
+  //background-position: center center;
   {% endif %}
   display: flex;
   font-family: monospace;
