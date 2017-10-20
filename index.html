@@ -2,7 +2,7 @@
 layout: signup
 ---
 
-<img src="{{site.logo}}" alt="" id="logo">
+<img src="{{ site.logo | prepend: site.url }}" alt="" id="logo">
 <h2>{{ site.tagline }}</h2>
 
 <div id='mc_embed_signup'>
