@@ -3,13 +3,13 @@
   <head>
     <title>{{ site.title }}</title>
     <link rel='stylesheet' href={{ '/css/main.css' | prepend: site.url }}>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     {% include social-headers.html %}
   </head>
   <body>
     {{ content }}
-    <script src={{ 'scripts/main.js' | prepend: site.url }}></script>
+    <script src={{ '/scripts/main.js' | prepend: site.url }}></script>
   </body>
 </html>
