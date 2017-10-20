@@ -81,7 +81,6 @@ _And now onto the step-by-step guide!_
   1. Test HTTPS by loading http://yourdomain.com in your browser. It should automatically redirect you to the https version of the site and a small lock icon should appear in your browser. This means that data is now being encrypted from the browser to your server.
 
 
-
 ## Social media
 **Goal:** Add social media links to your webpage.
 
