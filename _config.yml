@@ -15,3 +15,5 @@ socialMediaImage: /images/logo.png
 twitter:
 facebook:
 instagram:
+
+forkMeOnGithub: true #se this false to remove fork me on github ribbon
