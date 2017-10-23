@@ -86,6 +86,23 @@ _And now onto the step-by-step guide!_
 
 If you have social media accounts for your project, you can enable social media links on your site by adding the usernames to the appropriate variables in `config.yml`. eg if you have a twitter account, you can add your username to `config.yml` by adding editing the twitter line to say `twitter: drewSaysGoVeg` or for instagram: `instagram: YourInstgramName`. For facebook, some new pages don't yet have a short name. For facebook social media links to work, you need put everything that comes after facebook.com, eg `facebook: theleagueofjust.us` or `facebook: \213213112423\YourFacebookPageName`.
 
+## Mailgun - hello@yourdomain.com
+
+**Goal:** Create a hello@yourdomain.com email address so people can email you and forward it to another email account.
+
+ 1. Create a Mailgun account.
+ 1. Add your domain to your account.
+ 1. Mailgun will give you a DNS record that you need to add to your domain.
+ 1. Login to Cloudflare and add this DNS record to the domain.
+ 1. After you've set up the DNS record, come back to Mailgun to set up an email route.
+ 1. You can add you desired email address eg `hello@yourdomain.com`. Then you can choose where to forward this email address.
+ 1. Set up gmail to send as alias.
+  1. Login to your gmail account. Go to the settings tab. Choose 'Accounts and Import'.
+  1. Under 'Send mail as', add your new email address.
+  1. You'll be asked for the outgoing mail server information. You'll need to get this from mailgun. The SMTP address is probably `smtp.mailgun.com` but the username and password will be unique to your Mailgun account. Login to Mailgun, click on the 'Domains' tab, then click on your domain. In the top section, there should be login info for your SMTP server. The username is likely, `postmaster@yourdomain.com`. Copy those creditials to your gmail account.
+  1. Now when you create a new email message in gmail, you should have a drop down menu for 'from'--you can choose which email address to send the email from.
+
+
 ## Optional tools to set up later
 
  * IFTTT - use this to automate posting across social media platforms. eg Whenever you post to instagram, also post the content to twitter.
