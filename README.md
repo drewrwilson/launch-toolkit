@@ -1,5 +1,8 @@
 # Toolkit for Launching a New Project
 
+![](toolkit-images/launch-toolkit-header.png)
+
+
 ## Step-by-step guide & some code to quickly make a landing page for your new project
 
 This is a checklist and a small amount of code that makes it easy to for me to quickly launch a new project. After going through step-by-step guide, you'll have a a simple website for your new project with an embedded email list signup form, free webhosting, HTTPS enabled by default, and optional links to any of your social media accounts.
