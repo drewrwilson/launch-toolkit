@@ -8,7 +8,7 @@
 This is a checklist and a small amount of code that makes it easy to for me to quickly launch a new project. After going through step-by-step guide, you'll have a a simple website for your new project with an embedded email list signup form, free webhosting, HTTPS enabled by default, and optional links to any of your social media accounts.
 
 ## Background
-I start a bunch of projects. Open source software projects, community groups, activist projects, events, all kinds of stuff. I need webpages and email lists for each one. Whether it's a big project or it's just a one-off quick thing, I usually want to make a simple webpage for it with a mailing list signup. I find myself doing this frequently enough that I made this toolkit with some code and some notes to help myself very quickly put a project online.
+I start a bunch of projects. Open source software projects, community groups, activist projects, events, all kinds of stuff. Whether it's a big project or it's just a one-off quick thing, I usually want to make a simple webpage for it with a mailing list signup. I find myself doing this frequently enough that I made this toolkit with some code and some notes to help myself very quickly put a project online.
 
 ## Tools we'll be using
 
