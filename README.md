@@ -74,7 +74,7 @@ _And now onto the step-by-step guide!_
  1. Delete all of the existing DNS entries.
  1. Now we're going to setup the domain to point to Github Pages for free webhosting.
    1. Add an A Name entry. Set the Name to `@` and set the Value to `192.30.252.153`.
-   1. Add a second A Name entry. Set the Name to `@` and set the Value to `192.30.252.153`.
+   1. Add a second A Name entry. Set the Name to `@` and set the Value to `192.30.252.154`.
    1. Add a CNAME entry. Set the Name to `www` and set the value to `YOURDOMAIN.com`. Your DNS setting should look like this:
 ![](toolkit-images/cloudflare-dns-settings.png)
  1. Now let's enable HTTPS.
